@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <!--сессия для соеденения с БД-->
+  <session-factory>
+    <!--прописываем где находится наша бд-->
+    <property name="connection.url">jdbc:mysql://localhost:3306/my_db?useSSL=false&amp;serverTimezone=UTC</property>
+    <!--Драйвер который мы добавили в проект-->
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <!--USER-->
+    <property name="connection.username">bestuser</property>
+    <property name="connection.password">bestuser</property>
+    <!--Сессия будет привязана к Thread-->
+    <property name="current_session_context_class">thread</property>
+    <!--Диалект используемой СУБД-->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!--в консоли отображается то какое SQl выражение послано БД-->
+    <property name="show_sql">true</property>
+
+  </session-factory>
+</hibernate-configuration>

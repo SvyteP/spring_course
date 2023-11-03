@@ -8,9 +8,12 @@ public class UniversLibrary extends AbstractLibrary{
         System.out.println("We're taking book UniversLibrary");
         System.out.println("-------------------------------------------------------");
     }
-    protected void returnBook(){
+    public String returnBook(){
+        int a  = 10/0;
+
         System.out.println("We're return book UniversLibrary");
         System.out.println("-------------------------------------------------------");
+        return "War of MIR";
     }
     public void getMagazine(){
         System.out.println("We're taking magazine UniversLibrary");
