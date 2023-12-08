@@ -18,32 +18,43 @@ public class Test1 {
                                             .buildSessionFactory();
                                              Session session = factory.getCurrentSession()  // обертка вокруг БД ,основа для работы с БД
         ){
-           /*Department dep = new Department("IT",300,1200);
-           Employee employee1 = new Employee("max", "abramov", 2000);
-           Employee employee2 = new Employee("MAS", "Sss", 1000);
+         /*  Department dep = new Department("Sales",1500,500);
+           Employee employee1 = new Employee("Max", "abramov", 2000);
+           Employee employee2 = new Employee("Alex", "Sas", 1000);
+           Employee employee3 = new Employee("Anton", "Rebon", 1000);
            dep.addEmployeeToDepartment(employee1);
            dep.addEmployeeToDepartment(employee2);
+           dep.addEmployeeToDepartment(employee3);
            session.beginTransaction(); // Открытие транзакции
-           session.save(dep);
+           session.persist(dep);
            session.getTransaction().commit();// Закрытие транзакции*/
-/*
+
+
            session.beginTransaction(); // Открытие транзакции
-            Employee employee = session.get(Employee.class,1);
+           System.out.println("Get Depart");
+           Department employee = session.get(Department.class,3);
+
+           System.out.println("Show Depart");
            System.out.println(employee);
-           System.out.println(employee.getDepartment());
+           employee.getEmps().get(0);
+
+
            session.getTransaction().commit();// Закрытие транзакции
 
-            System.out.println("Done!");*/
+           System.out.println("Show emps of the depart");
+           System.out.println(employee.getEmps());
+
+           System.out.println("Done!");
 
 
 
-             session.beginTransaction(); // Открытие транзакции
+    /*       session.beginTransaction(); // Открытие транзакции
            Employee employee = session.get(Employee.class,7);
            session.remove(employee);
            session.getTransaction().commit();// Закрытие транзакции
 
            System.out.println("Done!");
-
+*/
 
        }
 
