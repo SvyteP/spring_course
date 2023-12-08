@@ -10,8 +10,8 @@
     <!--Драйвер который мы добавили в проект-->
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <!--USER-->
-    <property name="connection.username">bestuser</property>
-    <property name="connection.password">bestuser</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
     <!--Сессия будет привязана к Thread-->
     <property name="current_session_context_class">thread</property>
     <!--Диалект используемой СУБД-->
