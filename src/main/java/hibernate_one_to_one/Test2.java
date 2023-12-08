@@ -1,8 +1,8 @@
-package hibernate_test_2;
+package hibernate_one_to_one;
 
 
-import hibernate_test_2.entity.Detail;
-import hibernate_test_2.entity.Employee;
+import hibernate_one_to_one.entity.Detail;
+import hibernate_one_to_one.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -12,7 +12,7 @@ public class Test2 {
 
         // ADD
 
-/*    try (SessionFactory factory = new Configuration()
+    try (SessionFactory factory = new Configuration()
                                             .configure("hibernate.cfg.xml")
                                             .addAnnotatedClass(Employee.class)
                                             .addAnnotatedClass(Detail.class)
@@ -32,7 +32,7 @@ public class Test2 {
             session.getTransaction().commit();// Закрытие транзакции
 
             System.out.println("Done!");
-        }*/
+        }
         // GET
 /*        try (SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
@@ -55,7 +55,7 @@ public class Test2 {
 
         // DELETE
 
-        try (SessionFactory factory = new Configuration()
+      /*  try (SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class)
                 .addAnnotatedClass(Detail.class)
@@ -73,7 +73,7 @@ public class Test2 {
             session.getTransaction().commit();// Закрытие транзакции
 
             System.out.println("Done!");
-        }
+        }*/
 
     }
 }

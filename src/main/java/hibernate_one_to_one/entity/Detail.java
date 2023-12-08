@@ -1,7 +1,6 @@
-package hibernate_test_2.entity;
+package hibernate_one_to_one.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Cascade;
 
 @Entity
 @Table(name = "details")
